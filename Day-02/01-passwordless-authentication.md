@@ -28,6 +28,11 @@ After that , No identities found error got resolved but bad permission warning w
 I gave 600 to the pem file. 
 
 Hope this works for guys facing No identities found error.****
+
+
+
+now you have public kay and private key in your ansible machine(control node)
+copy the public key to the to manage nodes 
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Using Password 
 
