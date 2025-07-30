@@ -13,7 +13,7 @@ ssh-copy-id -f "-o IdentityFile <PATH TO PEM FILE>" ubuntu@<INSTANCE-PUBLIC-IP>
 - "-o IdentityFile <PATH TO PEM FILE>": This option specifies the identity file (private key) to use for the connection. The -o flag passes this option to the underlying ssh command.
 - ubuntu@<INSTANCE-IP>: This is the username (ubuntu) and the IP address of the remote server you want to access.
 
-**- If anyone ran into the issue of /usr/bin/ssh-copy-id: ERROR: No identities found while setting up passwordless authentication via public key, here is what I did
+****- If anyone ran into the issue of /usr/bin/ssh-copy-id: ERROR: No identities found while setting up passwordless authentication via public key, here is what I did
 
 Solution:
 
@@ -26,7 +26,7 @@ Since I wanted by default path in the .ssh directory which ssh-keygen command wa
 After that , No identities found error got resolved but bad permission warning was there.
 I gave 600 to the pem file. 
 
-Hope this works for guys facing No identities found error.**
+Hope this works for guys facing No identities found error.****
 
 ### Using Password 
 
