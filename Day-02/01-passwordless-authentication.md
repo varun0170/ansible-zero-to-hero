@@ -12,7 +12,8 @@ ssh-copy-id -f "-o IdentityFile <PATH TO PEM FILE>" ubuntu@<INSTANCE-PUBLIC-IP>
 - -f: This flag forces the copying of keys, which can be useful if you have keys already set up and want to overwrite them.
 - "-o IdentityFile <PATH TO PEM FILE>": This option specifies the identity file (private key) to use for the connection. The -o flag passes this option to the underlying ssh command.
 - ubuntu@<INSTANCE-IP>: This is the username (ubuntu) and the IP address of the remote server you want to access.
-
+--------------------------------------------------------------------------------------------------------------------------------------------------------------
+########### common error##################################
 ****- If anyone ran into the issue of /usr/bin/ssh-copy-id: ERROR: No identities found while setting up passwordless authentication via public key, here is what I did
 
 Solution:
@@ -27,7 +28,7 @@ After that , No identities found error got resolved but bad permission warning w
 I gave 600 to the pem file. 
 
 Hope this works for guys facing No identities found error.****
-
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### Using Password 
 
 - Go to the file `/etc/ssh/sshd_config.d/60-cloudimg-settings.conf`
